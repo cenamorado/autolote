@@ -1,0 +1,90 @@
+.card {
+	position: relative;
+	margin: 15px 0;
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+	&-img {
+		height: 250px;
+		background: #777;
+		border-radius: 10px 10px 0 0;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+	&-body {
+		padding: 30px;
+		*:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&-title {
+		color: $secondary-color;
+		letter-spacing: 2px;
+		line-height: 1.14;
+		margin-bottom: 5px;
+	}
+	&.with-icon {
+		margin-top: 65px;
+		.card-title {
+			margin-top: 35px;
+		}
+	}
+}
+.card-icon {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	@include translate(-50%, 0);
+}
+
+.card-h {
+	position: relative;
+	margin: 15px 0;
+	background-color: #ffffff;
+	text-align: left;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+	@include flex();
+	&-img {
+		min-width: 150px;
+		min-height: 100%;
+		background: #777;
+		border-radius: 10px 0 0 10px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		@include media-breakpoint-down(sm) {
+			min-width: 96px;
+		} //sm
+		&.rectangle {
+			height: 150px;
+		}
+	}
+	&-body {
+		padding: 30px;
+		p {
+			margin-bottom: 0;
+		}
+		@include media-breakpoint-down(xs) {
+			padding: 20px;
+		} //xs
+	}
+}
+
+.card-link {
+	cursor: pointer;
+	@include transition(all, 0.15s, linear, 0s);
+	&:hover,
+	&:focus {
+		@include translate(0, -6px);
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
+	}
+	&:active {
+		@include translate(0, -3px);
+		box-shadow: rgba(0, 0, 0, 0.30) 0px 2px 4px 0px;
+	}
+}

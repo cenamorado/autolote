@@ -1,0 +1,70 @@
+.btn {
+	border-style: solid;
+	border-width: 2px;
+	padding: 0.50em 1.50em;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	background: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: $header-font;
+	white-space: nowrap;
+	@include transition(all, 0.15s, linear, 0s);
+	border-radius: 2px;
+
+	&:hover,
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+	&.btn-1 {
+		border-color: $main-color;
+		background-color: $main-color;
+		color: #fff;
+		svg {
+			color: #fff;
+			margin-right: 6px;
+		}
+		&:hover,
+		&:focus {
+			border-color: darken($main-color, 4%);
+			background-color: darken($main-color, 4%);
+		}
+		&:active {
+			border-color: darken($main-color, 7.5%);
+			background-color: darken($main-color, 7.5%);
+		}
+	}
+	&.btn-2 {
+		border-color: $main-color;
+		color: $main-color;
+		&:hover,
+		&:focus {
+			background-color: $main-color;
+			color: #fff;
+		}
+	}
+	&.btn-3 {
+		border-color: $secondary-color;
+		background-color: $secondary-color;
+		color: #fff;
+		svg {
+			color: #fff;
+			margin-right: 6px;
+		}
+		&:hover,
+		&:focus {
+			border-color: darken($secondary-color, 4%);
+			background-color: darken($secondary-color, 4%);
+		}
+		&:active {
+			border-color: darken($secondary-color, 7.5%);
+			background-color: darken($secondary-color, 7.5%);
+		}
+	}
+	&.btn-block {
+		width: 100%;
+	}
+}

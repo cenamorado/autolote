@@ -1,0 +1,18 @@
+.jumbotron {
+    position: relative;
+    padding: 40px 0 47px;
+    text-align: center;
+    h1 {
+        color: $font-color-dark !important;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        @include translate(-50%, 0);
+        bottom: 0;
+        left: 50%;
+        height: 7px;
+        width: 500px;
+        background-color: $main-color;
+    }
+}

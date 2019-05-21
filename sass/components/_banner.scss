@@ -1,0 +1,23 @@
+.banner {
+    &-img {
+        @include background-img('');
+    }
+    &-lg {
+        height: 700px;
+        @include media-breakpoint-down(sm) {
+            height: 500px;
+        } //sm
+    }
+    &-md {
+        height: 500px;
+        @include media-breakpoint-down(md) {
+            height: 300px;;
+        } // md
+    }
+    &-sm {
+        height: 300px;
+        @include media-breakpoint-down(md) {
+            height: 150px;
+        } // md
+    }
+}

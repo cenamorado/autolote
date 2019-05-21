@@ -1,0 +1,22 @@
+
+/**
+ * Grid
+ */
+ .section {
+    padding: 40px 0;
+    &-small {
+      padding: 20px 0;
+    }
+    &-consecutive {
+      padding-top: 0;
+    }
+  }
+  .container {
+    &-small {
+      @include make-container-max-widths(
+        (
+          xl: 960px
+        )
+      );
+    }
+  }
