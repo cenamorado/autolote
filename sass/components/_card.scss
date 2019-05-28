@@ -2,7 +2,6 @@
 	position: relative;
 	margin: 15px 0;
 	background-color: #ffffff;
-	text-align: center;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 	&-img {
@@ -24,6 +23,16 @@
 		letter-spacing: 2px;
 		line-height: 1.14;
 		margin-bottom: 5px;
+		text-align: center;
+		font-weight: 600;
+	}
+	&-sub-title {
+		color: $gray;
+		margin: 0;
+	}
+	&-text {
+		font-size: 17px;
+		margin: 0;
 	}
 	&.with-icon {
 		margin-top: 65px;

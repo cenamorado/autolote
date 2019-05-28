@@ -18,7 +18,7 @@
  input,
  textarea,
  button {
-     @include font-responsive(16px, 20px, 360px, 1280px);
+     @include font-responsive(16px, 18px, 360px, 1280px);
  }
  a {
      @include transition(all, 0.2s, ease, 0s);

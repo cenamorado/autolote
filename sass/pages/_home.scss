@@ -1,0 +1,11 @@
+/*
+* Home Style
+*/
+.home-container {
+    margin-top: 70px;
+}
+.home-banner {
+    width: 100%;
+    height: 400px;
+    @include background-img('home-banner.jpg')
+}

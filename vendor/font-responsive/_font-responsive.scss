@@ -24,7 +24,7 @@
   @if ($size-unit == rem and $width-unit == px) {
     $min-width: pxtorem($min-width, $root-size);
     $max-width: pxtorem($max-width, $root-size);
-  } @elseif ($size-unit != $width-unit and
+  } @else if ($size-unit != $width-unit and
             ($size-unit != rem or $width-unit != em)) {
     @error 'this combination of units is not supported';
   }

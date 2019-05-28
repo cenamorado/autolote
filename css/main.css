@@ -4601,12 +4601,12 @@ body.overflow-hidden {
 }
 
 *::selection {
-  background: #031b3e;
+  background: #007bff;
   color: #fff;
 }
 
 *::-moz-selection {
-  background: #031b3e;
+  background: #007bff;
   color: #fff;
 }
 
@@ -4664,7 +4664,7 @@ a,
 input,
 textarea,
 button {
-  font-size: calc(16px + 4 * ((100vw - 360px) / 920));
+  font-size: calc(16px + 2 * ((100vw - 360px) / 920));
 }
 @media only screen and (max-width: 360px) {
   p,
@@ -4681,7 +4681,7 @@ a,
 input,
 textarea,
 button {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -4692,7 +4692,7 @@ a {
   transition: all 0.2s ease 0s;
 }
 a:hover, a:focus {
-  color: #031b3e;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -4710,7 +4710,7 @@ h6,
 .h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #031b3e;
+  color: #007bff;
   margin-bottom: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -4873,10 +4873,10 @@ ol li p {
   padding: 10px 20px;
 }
 .accordion-1 .accordion-item.active .accordion-heading, .accordion-1 .accordion-item:hover .accordion-heading, .accordion-1 .accordion-item:focus .accordion-heading {
-  color: #031b3e;
+  color: #007bff;
 }
 .accordion-1 .accordion-item.active .accordion-heading svg, .accordion-1 .accordion-item:hover .accordion-heading svg, .accordion-1 .accordion-item:focus .accordion-heading svg {
-  color: #031b3e;
+  color: #007bff;
 }
 .accordion-1 .reveal {
   background-color: #edeae2;
@@ -4887,7 +4887,7 @@ ol li p {
 }
 
 .banner-img {
-  background-image: url(/themes/blank/assets/);
+  background-image: url(/autolote/images/);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4941,8 +4941,8 @@ ol li p {
   outline: none;
 }
 .btn.btn-1 {
-  border-color: #031b3e;
-  background-color: #031b3e;
+  border-color: #007bff;
+  background-color: #007bff;
   color: #fff;
 }
 .btn.btn-1 svg {
@@ -4950,19 +4950,19 @@ ol li p {
   margin-right: 6px;
 }
 .btn.btn-1:hover, .btn.btn-1:focus {
-  border-color: #02132b;
-  background-color: #02132b;
+  border-color: #0071eb;
+  background-color: #0071eb;
 }
 .btn.btn-1:active {
-  border-color: #010b1a;
-  background-color: #010b1a;
+  border-color: #0069d9;
+  background-color: #0069d9;
 }
 .btn.btn-2 {
-  border-color: #031b3e;
-  color: #031b3e;
+  border-color: #007bff;
+  color: #007bff;
 }
 .btn.btn-2:hover, .btn.btn-2:focus {
-  background-color: #031b3e;
+  background-color: #007bff;
   color: #fff;
 }
 .btn.btn-3 {
@@ -4990,7 +4990,6 @@ ol li p {
   position: relative;
   margin: 15px 0;
   background-color: #ffffff;
-  text-align: center;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 }
@@ -5013,6 +5012,16 @@ ol li p {
   letter-spacing: 2px;
   line-height: 1.14;
   margin-bottom: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+.card-sub-title {
+  color: #8896aa;
+  margin: 0;
+}
+.card-text {
+  font-size: 17px;
+  margin: 0;
 }
 .card.with-icon {
   margin-top: 65px;
@@ -5136,7 +5145,7 @@ ol li p {
 .footer {
   background: #282828;
   padding: 30px 0;
-  border-top: 7px solid #031b3e;
+  border-top: 7px solid #007bff;
 }
 .footer p, .footer a {
   color: #999;
@@ -5182,7 +5191,7 @@ ol li p {
   z-index: 2;
   bottom: -1px;
   width: 100%;
-  background-image: url(/themes/blank/assets/images/hero-overlay.svg);
+  background-image: url(/autolote/images/images/hero-overlay.svg);
   background-repeat: no-repeat;
   background-position: center 100%;
   background-size: cover;
@@ -5278,7 +5287,7 @@ ol li p {
   left: 50%;
   height: 7px;
   width: 500px;
-  background-color: #031b3e;
+  background-color: #007bff;
 }
 
 .modal {
@@ -5361,7 +5370,7 @@ ol li p {
   border: 2px solid #fff;
 }
 .nav-link.active, .nav-link:hover, .nav-link:focus {
-  background-color: #031b3e;
+  background-color: #007bff;
   color: #fff;
 }
 
@@ -5388,10 +5397,10 @@ ol li p {
   align-items: center;
 }
 .navbar-logo {
-  padding: 20px 0;
+  height: 100%;
 }
 .navbar-logo img {
-  height: 40px;
+  height: 100%;
   width: auto;
 }
 @media (max-width: 375px) {
@@ -5421,7 +5430,7 @@ ol li p {
 }
 .navbar-links-link.active {
   position: relative;
-  color: #031b3e;
+  color: #007bff;
 }
 .navbar-links-link.active:after {
   content: "";
@@ -5430,7 +5439,7 @@ ol li p {
   left: -15px;
   width: calc(100% + 30px);
   height: 10px;
-  background-color: #031b3e;
+  background-color: #007bff;
 }
 .navbar-lang {
   line-height: 60px;
@@ -5441,7 +5450,7 @@ ol li p {
   font-weight: 300;
 }
 .navbar-lang a:hover, .navbar-lang a:focus {
-  color: #031b3e;
+  color: #007bff;
 }
 .navbar-lang a.active {
   font-weight: bold;
@@ -5621,7 +5630,7 @@ ol li p {
   }
 }
 .products-display.products-display-main:after {
-  background-color: #031b3e;
+  background-color: #007bff;
   left: 0;
 }
 .products-display.products-display-dark .products-display-text {
@@ -5744,8 +5753,8 @@ ol li p {
   opacity: 1;
 }
 .slick-dots li.slick-active button {
-  background: #031b3e;
-  border-color: #031b3e;
+  background: #007bff;
+  border-color: #007bff;
 }
 
 .tabs-content .tab-content {
@@ -5789,19 +5798,35 @@ ol li p {
   border-left: 1px solid #fff;
 }
 .tabs-1 .tab-link.active {
-  border-top: 2px solid #031b3e;
+  border-top: 2px solid #007bff;
   border-right: none;
   border-left: none;
   background-color: #fff;
-  color: #031b3e;
+  color: #007bff;
 }
 .tabs-1 .tab-content {
   background-color: #fff;
   padding: 15px;
 }
 
+/*
+* Home Style
+*/
+.home-container {
+  margin-top: 70px;
+}
+
+.home-banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(/autolote/images/home-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .text-main {
-  color: #031b3e !important;
+  color: #007bff !important;
 }
 
 .text-secondary {
@@ -5809,19 +5834,19 @@ ol li p {
 }
 
 .text-blue {
-  color: #031b3e !important;
+  color: #007bff !important;
 }
 
 .text-green {
-  color: green !important;
+  color: #28a745 !important;
 }
 
 .text-red {
-  color: #ea4347 !important;
+  color: #dc3545 !important;
 }
 
 .text-yellow {
-  color: #fdb936 !important;
+  color: #ffc107 !important;
 }
 
 .text-white {
@@ -5841,19 +5866,19 @@ ol li p {
 }
 
 .bg-blue {
-  background-color: #031b3e !important;
+  background-color: #007bff !important;
 }
 
 .bg-green {
-  background-color: green !important;
+  background-color: #28a745 !important;
 }
 
 .bg-red {
-  background-color: #ea4347 !important;
+  background-color: #dc3545 !important;
 }
 
 .bg-yellow {
-  background-color: #fdb936 !important;
+  background-color: #ffc107 !important;
 }
 
 .bg-brown {
