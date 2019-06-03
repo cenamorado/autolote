@@ -9,8 +9,7 @@
  button {
      font-family: $body-font;
      font-weight: 400;
-     color: #666;
-     font-size: 14px;
+     color: $dark-bg;
      @include smooth-font();
  }
  p,
@@ -41,9 +40,10 @@
  .h5,
  .h6 {
      font-family: $header-font;
-     font-weight: 400;
-     color: $main-color;
+     font-weight: 500;
+     color: $dark-bg;
      margin-bottom: 0;
+     text-transform: uppercase;
      @include smooth-font();
  }
  h1,
@@ -52,7 +52,7 @@
  }
  h2,
  .h2 {
-     @include font-responsive(26px, 30px, 360px, 1280px);
+     @include font-responsive(24px, 30px, 360px, 1280px);
  }
  h3,
  .h3 {
@@ -64,7 +64,7 @@
  }
  h5,
  .h5 {
-     @include font-responsive(18px, 20px, 360px, 1280px);
+     @include font-responsive(14px, 16px, 360px, 1280px);
  }
  h6,
  .h6 {

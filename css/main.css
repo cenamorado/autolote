@@ -1,7 +1,7 @@
 /*
 * Google Fonts
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Hind:400,500");
 /*
 * Vendor Files
 */
@@ -4524,7 +4524,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .slick-slide {
   float: left;
-  height: 100%;
   min-height: 1px;
   display: none;
 }
@@ -4601,12 +4600,12 @@ body.overflow-hidden {
 }
 
 *::selection {
-  background: #007bff;
+  background: #34ace0;
   color: #fff;
 }
 
 *::-moz-selection {
-  background: #007bff;
+  background: #34ace0;
   color: #fff;
 }
 
@@ -4650,10 +4649,9 @@ a,
 input,
 textarea,
 button {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 400;
-  color: #666;
-  font-size: 14px;
+  color: #282828;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4692,7 +4690,7 @@ a {
   transition: all 0.2s ease 0s;
 }
 a:hover, a:focus {
-  color: #007bff;
+  color: #34ace0;
   text-decoration: none;
 }
 
@@ -4708,10 +4706,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #007bff;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  color: #282828;
   margin-bottom: 0;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4736,12 +4735,12 @@ h1,
 
 h2,
 .h2 {
-  font-size: calc(26px + 4 * ((100vw - 360px) / 920));
+  font-size: calc(24px + 6 * ((100vw - 360px) / 920));
 }
 @media only screen and (max-width: 360px) {
   h2,
 .h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -4787,24 +4786,24 @@ h4,
 
 h5,
 .h5 {
-  font-size: calc(18px + 2 * ((100vw - 360px) / 920));
+  font-size: calc(14px + 2 * ((100vw - 360px) / 920));
 }
 @media only screen and (max-width: 360px) {
   h5,
 .h5 {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 1280px) {
   h5,
 .h5 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 h6,
 .h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
@@ -4873,10 +4872,10 @@ ol li p {
   padding: 10px 20px;
 }
 .accordion-1 .accordion-item.active .accordion-heading, .accordion-1 .accordion-item:hover .accordion-heading, .accordion-1 .accordion-item:focus .accordion-heading {
-  color: #007bff;
+  color: #34ace0;
 }
 .accordion-1 .accordion-item.active .accordion-heading svg, .accordion-1 .accordion-item:hover .accordion-heading svg, .accordion-1 .accordion-item:focus .accordion-heading svg {
-  color: #007bff;
+  color: #34ace0;
 }
 .accordion-1 .reveal {
   background-color: #edeae2;
@@ -4928,7 +4927,7 @@ ol li p {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Hind", sans-serif;
   white-space: nowrap;
   -webkit-transition: all 0.15s linear 0s;
   -moz-transition: all 0.15s linear 0s;
@@ -4941,8 +4940,8 @@ ol li p {
   outline: none;
 }
 .btn.btn-1 {
-  border-color: #007bff;
-  background-color: #007bff;
+  border-color: #34ace0;
+  background-color: #34ace0;
   color: #fff;
 }
 .btn.btn-1 svg {
@@ -4950,19 +4949,19 @@ ol li p {
   margin-right: 6px;
 }
 .btn.btn-1:hover, .btn.btn-1:focus {
-  border-color: #0071eb;
-  background-color: #0071eb;
+  border-color: #22a5dd;
+  background-color: #22a5dd;
 }
 .btn.btn-1:active {
-  border-color: #0069d9;
-  background-color: #0069d9;
+  border-color: #1f99ce;
+  background-color: #1f99ce;
 }
 .btn.btn-2 {
-  border-color: #007bff;
-  color: #007bff;
+  border-color: #34ace0;
+  color: #34ace0;
 }
 .btn.btn-2:hover, .btn.btn-2:focus {
-  background-color: #007bff;
+  background-color: #34ace0;
   color: #fff;
 }
 .btn.btn-3 {
@@ -4986,28 +4985,28 @@ ol li p {
   width: 100%;
 }
 
-.card {
+.card-list {
   position: relative;
-  margin: 15px 0;
+  margin: 10px 0;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 }
-.card-img {
-  height: 250px;
+.card-list-img {
+  height: 180px;
   background: #777;
   border-radius: 10px 10px 0 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.card-body {
+.card-list-body {
   padding: 30px;
 }
-.card-body *:last-child {
+.card-list-body *:last-child {
   margin-bottom: 0;
 }
-.card-title {
+.card-list-title {
   color: #e6b16a;
   letter-spacing: 2px;
   line-height: 1.14;
@@ -5015,19 +5014,32 @@ ol li p {
   text-align: center;
   font-weight: 600;
 }
-.card-sub-title {
+.card-list-sub-title {
   color: #8896aa;
   margin: 0;
 }
-.card-text {
+.card-list-text {
   font-size: 17px;
   margin: 0;
 }
-.card.with-icon {
+.card-list.with-icon {
   margin-top: 65px;
 }
-.card.with-icon .card-title {
+.card-list.with-icon .card-title {
   margin-top: 35px;
+}
+
+.card-brand {
+  cursor: pointer;
+  position: relative;
+  margin: 15px 0;
+}
+.card-brand-img-marca {
+  height: 120px;
+  border-radius: 10px 10px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .card-icon {
@@ -5145,7 +5157,6 @@ ol li p {
 .footer {
   background: #282828;
   padding: 30px 0;
-  border-top: 7px solid #007bff;
 }
 .footer p, .footer a {
   color: #999;
@@ -5163,7 +5174,7 @@ ol li p {
   width: 100%;
   margin-bottom: 15px;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Hind", sans-serif;
   padding: 7px 15px;
   border: none;
   -webkit-appearance: none;
@@ -5287,7 +5298,7 @@ ol li p {
   left: 50%;
   height: 7px;
   width: 500px;
-  background-color: #007bff;
+  background-color: #34ace0;
 }
 
 .modal {
@@ -5370,7 +5381,7 @@ ol li p {
   border: 2px solid #fff;
 }
 .nav-link.active, .nav-link:hover, .nav-link:focus {
-  background-color: #007bff;
+  background-color: #34ace0;
   color: #fff;
 }
 
@@ -5430,7 +5441,7 @@ ol li p {
 }
 .navbar-links-link.active {
   position: relative;
-  color: #007bff;
+  color: #34ace0;
 }
 .navbar-links-link.active:after {
   content: "";
@@ -5439,7 +5450,7 @@ ol li p {
   left: -15px;
   width: calc(100% + 30px);
   height: 10px;
-  background-color: #007bff;
+  background-color: #34ace0;
 }
 .navbar-lang {
   line-height: 60px;
@@ -5450,7 +5461,7 @@ ol li p {
   font-weight: 300;
 }
 .navbar-lang a:hover, .navbar-lang a:focus {
-  color: #007bff;
+  color: #34ace0;
 }
 .navbar-lang a.active {
   font-weight: bold;
@@ -5649,8 +5660,8 @@ ol li p {
   opacity: 1;
 }
 .slick-dots li.slick-active button {
-  background: #007bff;
-  border-color: #007bff;
+  background: #34ace0;
+  border-color: #34ace0;
 }
 
 .tabs-content .tab-content {
@@ -5694,11 +5705,11 @@ ol li p {
   border-left: 1px solid #fff;
 }
 .tabs-1 .tab-link.active {
-  border-top: 2px solid #007bff;
+  border-top: 2px solid #34ace0;
   border-right: none;
   border-left: none;
   background-color: #fff;
-  color: #007bff;
+  color: #34ace0;
 }
 .tabs-1 .tab-content {
   background-color: #fff;
@@ -5721,8 +5732,51 @@ ol li p {
   background-size: cover;
 }
 
+.car-slick-detail-main .slide {
+  width: 100%;
+  height: 450px;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.car-slick-detail-main img {
+  width: auto;
+  height: 100%;
+}
+
+.car-slick-detail-img .slide {
+  margin: 0 5px;
+}
+.car-slick-detail-img .slide img {
+  width: 100%;
+  height: auto;
+}
+
+.product-detail-info h2 {
+  color: #34ace0;
+}
+.product-detail-info p {
+  font-size: 18px;
+  margin: 5px 0px;
+}
+.product-detail-info span {
+  color: #8896aa;
+}
+.product-detail-info-title-options {
+  font-size: 14px;
+  line-height: 26px;
+  color: #191919;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+.product-detail-info-title-options span {
+  color: #34ace0;
+}
+
 .text-main {
-  color: #007bff !important;
+  color: #34ace0 !important;
 }
 
 .text-secondary {
@@ -5730,7 +5784,7 @@ ol li p {
 }
 
 .text-blue {
-  color: #007bff !important;
+  color: #34ace0 !important;
 }
 
 .text-green {
@@ -5743,6 +5797,10 @@ ol li p {
 
 .text-yellow {
   color: #ffc107 !important;
+}
+
+.text-gold {
+  color: #e6b16a !important;
 }
 
 .text-white {
@@ -5762,7 +5820,7 @@ ol li p {
 }
 
 .bg-blue {
-  background-color: #007bff !important;
+  background-color: #34ace0 !important;
 }
 
 .bg-green {
@@ -5787,6 +5845,10 @@ ol li p {
 
 .bg-black {
   background-color: #000000 !important;
+}
+
+.margin-navbar {
+  margin-top: 80px;
 }
 
 .text-nowrap {

@@ -4,6 +4,7 @@
 $gray: #8896aa;
 $gold: #e6b16a;
 $brown: brown;
+$blue: #34ace0;
 
 $main-color: $blue;
 $secondary-color: $gold;
@@ -21,13 +22,14 @@ $selection-color: $main-color;
 /*
    * Fonts
    */
-$body-font: "Open Sans", sans-serif;
+$body-font: "Hind", sans-serif;
+$header-font: "Hind", sans-serif;
 $body-font-size: 16px;
-$header-font: "Open Sans", sans-serif;
 
 /*
    * Others
    */
+$navbar-height: 80px;
 $assets-path: "/autolote/images/";
 
 /*

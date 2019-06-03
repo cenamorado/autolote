@@ -1,11 +1,11 @@
-.card {
+.card-list {
 	position: relative;
-	margin: 15px 0;
+	margin: 10px 0;
 	background-color: #ffffff;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 	&-img {
-		height: 250px;
+		height: 180px;
 		background: #777;
 		border-radius: 10px 10px 0 0;
 		background-repeat: no-repeat;
@@ -39,6 +39,18 @@
 		.card-title {
 			margin-top: 35px;
 		}
+	}
+}
+.card-brand {
+	cursor: pointer;
+	position: relative;
+	margin: 15px 0;
+	&-img-marca {
+		height: 120px;
+		border-radius: 10px 10px 0 0;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
 	}
 }
 .card-icon {
