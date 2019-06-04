@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#79c000" />
+    <meta name="theme-color" content="#282828" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
@@ -24,6 +24,9 @@
           <div class="navbar-links-link"><a href="http://">Contacto</a></div>
           <div class="navbar-links-link"></div>
         </div>
+        <div class="navbar-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </header>
 
@@ -32,7 +35,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div class="car-slick-detail-main">
+            <div class="car-slick-detail-main mb-2">
               <div
                 class="slide"
                 style="background-image:url('images/cars/1.jpg')"
@@ -73,7 +76,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <h1 class="mt-3">Ford Focus 2014</h1>
+            <h2 class="mt-3">Ford Focus 2014</h2>
             <div class="product-detail-info mb-3 mt-2">
               <p>Placa: <span>HAD8080</span></p>
               <p>Precio: <span>130,000.00</span></p>
@@ -86,7 +89,7 @@
             </div>
           </div>
           <div class="col-md-12">
-            <h1>Datos del Vendedor</h1>
+            <h2>Datos del Vendedor</h2>
             <div class="product-detail-info mb-3 mt-2">
               <p>Vendedor: <span>Mario Cartagena</span></p>
               <p>Ciudad: <span>San Pedro Sula</span></p>
@@ -96,11 +99,80 @@
             </div>
           </div>
         </div>
+        <!--Marcas-->
+        <div class="brands-title">
+          <h2 class="mt-4">Marcas</h2>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="card card-brand">
+              <div
+                class="card-brand-img-marca"
+                style="background-image:url('images/logos/ford.png')"
+              ></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="card card-brand">
+              <div
+                class="card-brand-img-marca"
+                style="background-image:url('images/logos/chevrolet.png')"
+              ></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="card card-brand">
+              <div
+                class="card-brand-img-marca"
+                style="background-image:url('images/logos/honda.png')"
+              ></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="card card-brand">
+              <div
+                class="card-brand-img-marca"
+                style="background-image:url('images/logos/bmw.png')"
+              ></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer id="layout-footer"></footer>
+    <footer id="layout-footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Autos Usados</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li><h5 class="text-white mb-2">Contactanos</h5></li>
+              <li>
+                <p>Telefono: <a href="tel:+">2510-0115</a></p>
+              </li>
+              <li>
+                <p>
+                  Direccion:
+                  <span>5 calle 15 ave. Barrio Los Andes. San Pedro Sula</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <p class="text-center text-white m-0">
+              © 2019 Autos a la Venta. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script
@@ -125,4 +197,4 @@
     <script src="js/ready.js"></script>
   </body>
 </html>
-<!-- sass //watch sass:css -->>
+<!-- sass //watch sass:css -->

@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('.navbar-menu-btn').click(function (event) {
+      event.preventDefault();
+    $(".navbar-links").toggleClass("active");
+  })
   $(".card-slick").slick({
     infinite: true,
     cssEase: "linear",

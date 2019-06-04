@@ -25,7 +25,7 @@
 		color: $blue;
 	}
 	p {
-		font-size: 18px;
+		@include font-responsive(16px, 18px, 360px, 1280px);
 		margin: 5px 0px;
 	}
 	span {
@@ -44,3 +44,24 @@
 		}
 	}
 }
+@include media-breakpoint-down(md) {
+	.car-slick-detail-main {
+		.slide {
+			height: 280px;
+		}
+	}
+} // md
+@include media-breakpoint-down(sm) {
+	.car-slick-detail-main {
+		.slide {
+			height: 300px;
+		}
+	}
+} //sm
+@include media-breakpoint-down(xs) {
+	.car-slick-detail-main {
+		.slide {
+			height:180px;
+		}
+	}
+} //xs

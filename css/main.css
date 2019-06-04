@@ -4886,7 +4886,7 @@ ol li p {
 }
 
 .banner-img {
-  background-image: url(/autolote/images/);
+  background-image: url(/images/);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -5159,7 +5159,14 @@ ol li p {
   padding: 30px 0;
 }
 .footer p, .footer a {
-  color: #999;
+  color: #fff;
+  margin: 0;
+}
+.footer a:hover {
+  color: #e6b16a;
+}
+.footer li {
+  margin: 2px 0;
 }
 .footer-copyright {
   text-align: center;
@@ -5202,7 +5209,7 @@ ol li p {
   z-index: 2;
   bottom: -1px;
   width: 100%;
-  background-image: url(/autolote/images/images/hero-overlay.svg);
+  background-image: url(/images/images/hero-overlay.svg);
   background-repeat: no-repeat;
   background-position: center 100%;
   background-size: cover;
@@ -5393,12 +5400,9 @@ ol li p {
   z-index: 2800;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
-  -webkit-transition: 0.15s all linear 0s;
-  -moz-transition: 0.15s all linear 0s;
-  -o-transition: 0.15s all linear 0s;
-  transition: 0.15s all linear 0s;
 }
 .navbar .container {
+  height: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -5408,22 +5412,11 @@ ol li p {
   align-items: center;
 }
 .navbar-logo {
-  height: 100%;
+  height: 90%;
 }
 .navbar-logo img {
   height: 100%;
   width: auto;
-}
-@media (max-width: 375px) {
-  .navbar-logo {
-    padding: 25px 0;
-  }
-  .navbar-logo img {
-    height: 30px;
-  }
-}
-.navbar-white-logo {
-  display: none;
 }
 .navbar-links {
   display: -webkit-box;
@@ -5490,6 +5483,8 @@ ol li p {
 .navbar-menu-btn {
   display: none;
   color: #2e2e2e;
+  font-size: 25px;
+  cursor: pointer;
 }
 .navbar-menu-btn:hover, .navbar-menu-btn:focus {
   color: #2e2e2e;
@@ -5499,14 +5494,15 @@ ol li p {
   .navbar-links {
     position: fixed;
     z-index: 3000;
-    top: 100%;
-    bottom: -100%;
+    top: 80px;
     left: 0;
     width: 100%;
     height: calc(100% - 80px);
-    background-color: #282828;
+    background-color: #fff;
     flex-direction: column;
     padding: 4.25rem 0 0 0;
+    opacity: 0;
+    visibility: hidden;
     -webkit-transition: 0.2s all ease-in-out 0s;
     -moz-transition: 0.2s all ease-in-out 0s;
     -o-transition: 0.2s all ease-in-out 0s;
@@ -5514,7 +5510,7 @@ ol li p {
   }
   .navbar-links-link {
     line-height: 1;
-    color: #fff;
+    color: #8896aa;
     margin-right: 0;
     text-align: center;
     padding: 1rem;
@@ -5524,47 +5520,12 @@ ol li p {
   .navbar-links-link.active {
     background-color: #222329;
   }
-  .navbar-links-link.active:after {
-    display: none;
-  }
-  .navbar-lang {
-    text-align: center;
-    margin: auto 0 1.25rem 0;
-  }
-  .navbar-lang a {
-    font-size: 20px;
-    color: #fff;
-  }
-  .navbar-lang-divider {
-    border-color: #fff;
-    margin: 0 10px;
-    height: 22px;
-    bottom: -4px;
-  }
-  .navbar-contact .btn {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    padding: 1.15rem;
+  .navbar-links.active {
+    opacity: 0.9;
+    visibility: visible;
   }
   .navbar-menu-btn {
     display: inline-block;
-  }
-  .navbar.active {
-    background-color: #282828;
-  }
-  .navbar.active .navbar-links {
-    top: 80px;
-    bottom: 0;
-  }
-  .navbar.active .navbar-main-logo {
-    display: none;
-  }
-  .navbar.active .navbar-white-logo {
-    display: inline;
-  }
-  .navbar.active .navbar-menu-btn {
-    color: #ffffff;
   }
 }
 /* Slider */
@@ -5723,15 +5684,36 @@ ol li p {
   margin-top: 70px;
 }
 
+.img-fluid {
+  width: auto;
+  height: auto;
+}
+
 .home-banner {
   width: 100%;
-  height: 400px;
-  background-image: url(/autolote/images/home-banner.jpg);
+  height: 350px;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background-image: url(/images/banner-home.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
+@media (max-width: 991.98px) {
+  .home-banner {
+    height: 200px;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
 .car-slick-detail-main .slide {
   width: 100%;
   height: 450px;
@@ -5756,8 +5738,18 @@ ol li p {
   color: #34ace0;
 }
 .product-detail-info p {
-  font-size: 18px;
+  font-size: calc(16px + 2 * ((100vw - 360px) / 920));
   margin: 5px 0px;
+}
+@media only screen and (max-width: 360px) {
+  .product-detail-info p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .product-detail-info p {
+    font-size: 18px;
+  }
 }
 .product-detail-info span {
   color: #8896aa;
@@ -5775,6 +5767,21 @@ ol li p {
   color: #34ace0;
 }
 
+@media (max-width: 991.98px) {
+  .car-slick-detail-main .slide {
+    height: 280px;
+  }
+}
+@media (max-width: 767.98px) {
+  .car-slick-detail-main .slide {
+    height: 300px;
+  }
+}
+@media (max-width: 575.98px) {
+  .car-slick-detail-main .slide {
+    height: 180px;
+  }
+}
 .text-main {
   color: #34ace0 !important;
 }

@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#79c000" />
+    <meta name="theme-color" content="#282828" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
@@ -29,8 +29,28 @@
 
     <!-- Content -->
     <section id="layout-content" class="home-container">
-      <div class="home-banner"></div>
+      <div class="home-banner">
+        <div class="container">
+          <form class="">
+            <div class="form-row align-items-center">
+              <div class="col-md-4 my-1">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="container">
+        <img
+          src="/images/banner_horizontal.jpg"
+          class="img-fluid rounded mx-auto d-block mt-2"
+          alt="Responsive image"
+        />
         <div class="card-slick">
           <div class="slide p-2">
             <div class="card card-list">
@@ -97,7 +117,7 @@
           <h2 class="mt-4">Marcas</h2>
         </div>
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card card-brand">
               <div
                 class="card-brand-img-marca"
@@ -105,11 +125,27 @@
               ></div>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="card card-brand">
               <div
                 class="card-brand-img-marca"
                 style="background-image:url('images/logos/chevrolet.png')"
+              ></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="card card-brand">
+              <div
+                class="card-brand-img-marca"
+                style="background-image:url('images/logos/honda.png')"
+              ></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="card card-brand">
+              <div
+                class="card-brand-img-marca"
+                style="background-image:url('images/logos/bmw.png')"
               ></div>
             </div>
           </div>
@@ -118,8 +154,33 @@
     </section>
 
     <!-- Footer -->
-    <footer id="layout-footer"></footer>
-
+    <footer id="layout-footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Autos Usados</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li><h5 class="text-white mb-2">Contactanos</h5></li>
+              <li>
+                <p>Telefono: <a href="tel:+">2510-0115</a></p>
+              </li>
+              <li>
+                <p>Direccion: <span>5 calle 15 ave. Barrio Los Andes. San Pedro Sula</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <p class="text-center text-white m-0">© 2019 Autos a la Venta. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -143,4 +204,4 @@
     <script src="js/ready.js"></script>
   </body>
 </html>
-<!-- sass //watch sass:css -->>
+<!-- sass //watch sass:css -->
