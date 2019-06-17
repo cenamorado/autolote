@@ -5529,10 +5529,16 @@ ol li p {
   }
 }
 /* Slider */
+.slick-list {
+  width: 100%;
+}
 .slick-loading .slick-list {
   background: #fff url("/themes/galiltec/assets/images/icons/spinner.gif") center center no-repeat;
 }
 
+.slick-slide {
+  widows: 100% !important;
+}
 .slick-slide:focus {
   box-shadow: none;
   outline: none;
@@ -5550,7 +5556,6 @@ ol li p {
   background: transparent;
   color: #fff;
   opacity: 0.75;
-  bottom: 0;
   padding: 0;
   border: none;
   outline: none;
@@ -5563,7 +5568,7 @@ ol li p {
 }
 
 .slick-prev {
-  left: 15%;
+  left: 5%;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -5572,7 +5577,7 @@ ol li p {
 }
 
 .slick-next {
-  right: 15%;
+  right: 5%;
 }
 
 /* Dots */
@@ -5713,6 +5718,10 @@ ol li p {
     width: 100%;
     height: auto;
   }
+}
+.car-slick-detail-main {
+  display: flex;
+  align-items: center;
 }
 .car-slick-detail-main .slide {
   width: 100%;

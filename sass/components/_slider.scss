@@ -42,12 +42,14 @@ $slick-opacity-not-active: 1 !default;
 /* Slider */
 
 .slick-list {
+	width: 100%;
 	.slick-loading & {
 		background: #fff url('/themes/galiltec/assets/images/icons/spinner.gif')
 			center center no-repeat;
 	}
 }
 .slick-slide {
+	widows: 100% !important;
 	&:focus {
 		box-shadow: none;
 		outline: none;
@@ -79,7 +81,6 @@ $slick-opacity-not-active: 1 !default;
 	background: transparent;
 	color: #fff;
 	opacity: 0.75;
-	bottom: 0;
 	padding: 0;
 	border: none;
 	outline: none;
@@ -92,12 +93,12 @@ $slick-opacity-not-active: 1 !default;
 }
 
 .slick-prev {
-	left: 15%;
+	left: 5%;
 	@include rotate(180deg);
 }
 
 .slick-next {
-	right: 15%;
+	right: 5%;
 }
 /* Dots */
 

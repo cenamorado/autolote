@@ -35,7 +35,9 @@ $(document).ready(function() {
   $(".car-slick-detail-main").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
+    nextArrow: '<div class="slick-next"><i class="fas fa-arrow-right"></i></div>',
+    prevArrow: '<div class="slick-prev"><i class="fas fa-arrow-right"></i></div>',
     fade: true,
     asNavFor: ".car-slick-detail-img"
 	});
